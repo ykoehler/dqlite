@@ -236,8 +236,8 @@ static int apply(struct replication *r,
 			default:
 				printf(
 				    "unexpected apply failure for command type "
-				    "%d\n",
-				    apply->type);
+				    "%d status %d\n",
+				    apply->type, apply->status);
 				assert(0);
 				break;
 		};
